@@ -21,14 +21,11 @@ Design a UART (Universal Asynchronous Receiver-Transmitter) receiver using VHDL,
 
 **Key Points:**
 
-1. Entity Declaration: Define the UART receiver entity with input clock, input serial data, output data valid, and output received byte signals.
-2. 
-3. State Machine: Implement a finite state machine (FSM) with five states: idle, start bit detection, data bits reception, stop bit detection, and cleanup.
-4. 
-5. Signal Declarations: Declare signals for the current state, clock counter, bit index, received byte, and data valid.
-6. 
-7. Process: Describe the behavior of the FSM using a VHDL process, which includes:
-8. 
+1. Entity Declaration: Define the UART receiver entity with input clock, input serial data, output data valid, and output received byte signals. 
+2. State Machine: Implement a finite state machine (FSM) with five states: idle, start bit detection, data bits reception, stop bit detection, and cleanup. 
+3. Signal Declarations: Declare signals for the current state, clock counter, bit index, received byte, and data valid.
+4. Process: Describe the behavior of the FSM using a VHDL process, which includes:
+   
     - Start bit detection and timing
     - 
     - Data bits reception and storage
@@ -37,15 +34,15 @@ Design a UART (Universal Asynchronous Receiver-Transmitter) receiver using VHDL,
     - 
     - Cleanup and preparation for next reception
     - 
-9. Output Assignments: Assign the output signals data valid and received byte the values of the corresponding internal signals.
-10. 
-11. Clock Synchronization: Use the input clock signal to synchronize the FSM and ensure proper timing.
-12. 
-13. Bit Indexing: Use the bit index signal to keep track of the current bit position during data reception.
-14. 
-15. Data Validation: Use the stop bit detection and validation to ensure the received data is valid.
+5. Output Assignments: Assign the output signals data valid and received byte the values of the corresponding internal signals.
+ 
+6. Clock Synchronization: Use the input clock signal to synchronize the FSM and ensure proper timing.
+ 
+7. Bit Indexing: Use the bit index signal to keep track of the current bit position during data reception.
+   
+8. Data Validation: Use the stop bit detection and validation to ensure the received data is valid.
 
-16. This is a VHDL implementation of a UART (Universal Asynchronous Receiver-Transmitter) receiver. Here's a breakdown of the code:
+9. This is a VHDL implementation of a UART (Universal Asynchronous Receiver-Transmitter) receiver. Here's a breakdown of the code:
 
 **Entity Declaration**
 
